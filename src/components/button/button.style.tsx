@@ -6,6 +6,7 @@ export interface BTN {
   children: React.ReactNode
   color?: COLOR
   variant?: DISPLAY
+  click?: React.MouseEventHandler
   attr?: any
 }
 

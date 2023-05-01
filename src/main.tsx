@@ -2,11 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ThemeProvider } from './hook/context/theme.context'
 import './style/index.scss'
-import { Login } from './page/login.page'
+import { RouterProvider } from 'react-router-dom'
+import { browserRouter } from './router'
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ThemeProvider>
-      <Login />
+      <RouterProvider router={browserRouter} />
     </ThemeProvider>
   </React.StrictMode>,
 )

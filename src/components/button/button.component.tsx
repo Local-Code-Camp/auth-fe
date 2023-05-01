@@ -1,8 +1,8 @@
 import { BTN, ButtonStyle } from "./button.style"
 
-export const Button = ({ color, children, variant, attr }: BTN): JSX.Element => {
+export const Button = ({ color, children, variant, attr, click }: BTN): JSX.Element => {
   return (
-    <ButtonStyle color={color} variant={variant} {...attr}>
+    <ButtonStyle onClick={click} color={color} variant={variant} {...attr}>
       {children}
     </ButtonStyle>
   )
